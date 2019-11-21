@@ -1,0 +1,503 @@
+WARNING: 2019-11-19 16:07:46,235 - deprecation_wrapper.py:119 * 12244 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-19 16:07:46,705 - deprecation_wrapper.py:119 * 12244 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-19 16:07:46,720 - deprecation_wrapper.py:119 * 12244 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-19 16:07:46,747 - deprecation.py:323 * 12244 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:108: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 16:07:46,811 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 16:07:46,816 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-19 16:07:46,844 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 16:07:46,846 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 16:07:46,860 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 16:07:46,863 - deprecation.py:323 * 12244 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 16:07:46,868 - deprecation.py:323 * 12244 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:109: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-19 16:07:46,871 - deprecation.py:323 * 12244 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-19 16:07:46,880 - deprecation_wrapper.py:119 * 12244 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-19 17:04:33,660 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-19 17:04:33,667 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-19 17:04:33,674 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-19 17:04:33,692 - deprecation.py:323 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:04:33,696 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:04:33,698 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-19 17:04:33,700 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:04:33,701 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:04:33,703 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:04:33,705 - deprecation.py:323 * 7468 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:04:33,708 - deprecation.py:323 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-19 17:04:33,709 - deprecation.py:323 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-19 17:04:33,716 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-19 17:04:33,716 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-19 17:04:33,891 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-19 17:04:33,940 - deprecation_wrapper.py:119 * 7468 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-19 17:18:21,903 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-19 17:18:21,910 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-19 17:18:21,917 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-19 17:18:21,935 - deprecation.py:323 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:18:21,939 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:18:21,940 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-19 17:18:21,943 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:18:21,944 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:18:21,947 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:18:21,948 - deprecation.py:323 * 5072 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:18:21,951 - deprecation.py:323 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-19 17:18:21,952 - deprecation.py:323 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-19 17:18:21,959 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-19 17:18:21,959 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-19 17:18:21,969 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-19 17:18:21,980 - deprecation_wrapper.py:119 * 5072 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-19 17:26:19,134 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-19 17:26:19,142 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-19 17:26:19,149 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-19 17:26:19,167 - deprecation.py:323 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:26:19,171 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-19 17:26:19,172 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-19 17:26:19,175 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:26:19,176 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-19 17:26:19,179 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:26:19,180 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-19 17:26:19,184 - deprecation.py:323 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-19 17:26:19,185 - deprecation.py:323 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-19 17:26:19,191 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-19 17:26:19,192 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-19 17:26:19,202 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-19 17:26:19,213 - deprecation_wrapper.py:119 * 16544 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-19 17:26:20,404 - deprecation.py:323 * 16544 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:16:57,543 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:16:58,189 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:16:58,199 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:16:58,226 - deprecation.py:323 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:16:58,270 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:16:58,271 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 10:16:58,283 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:16:58,284 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:16:58,286 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:16:58,288 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:16:58,291 - deprecation.py:323 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 10:16:58,294 - deprecation.py:323 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-20 10:16:58,302 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 10:16:58,303 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 10:16:58,523 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:16:58,540 - deprecation_wrapper.py:119 * 9540 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:16:59,960 - deprecation.py:323 * 9540 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:22:19,545 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:22:19,552 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:22:19,559 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:22:19,577 - deprecation.py:323 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:22:19,582 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:22:19,583 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 10:22:19,586 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:22:19,586 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:22:19,589 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:22:19,590 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:22:19,593 - deprecation.py:323 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 10:22:19,594 - deprecation.py:323 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-20 10:22:19,601 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 10:22:19,602 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 10:22:19,611 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:22:19,621 - deprecation_wrapper.py:119 * 11364 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:22:19,676 - deprecation.py:323 * 11364 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:24:19,575 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:24:19,582 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:24:19,589 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:24:19,607 - deprecation.py:323 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:24:19,612 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:24:19,613 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 10:24:19,616 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:24:19,616 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:24:19,619 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:24:19,621 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:24:19,627 - deprecation.py:323 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 10:24:19,629 - deprecation.py:323 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-20 10:24:19,636 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 10:24:19,636 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 10:24:19,646 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:24:19,659 - deprecation_wrapper.py:119 * 2628 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:24:19,718 - deprecation.py:323 * 2628 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:26:08,100 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:26:08,108 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:26:08,115 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:26:08,136 - deprecation.py:323 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:26:08,141 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 10:26:08,143 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 10:26:08,146 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:26:08,147 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 10:26:08,151 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:26:08,152 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 10:26:08,155 - deprecation.py:323 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 10:26:08,158 - deprecation.py:323 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-20 10:26:08,165 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 10:26:08,166 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 10:26:08,177 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:26:08,188 - deprecation_wrapper.py:119 * 5156 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:26:08,254 - deprecation.py:323 * 5156 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:36:33,499 - deprecation_wrapper.py:119 * 17420 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:36:33,506 - deprecation_wrapper.py:119 * 17420 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:36:33,513 - deprecation_wrapper.py:119 * 17420 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:38:36,531 - deprecation_wrapper.py:119 * 13972 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:38:36,539 - deprecation_wrapper.py:119 * 13972 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:38:36,548 - deprecation_wrapper.py:119 * 13972 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:38:36,570 - deprecation_wrapper.py:119 * 13972 From tf_simnet.py:116: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING: 2019-11-20 10:38:36,577 - deprecation_wrapper.py:119 * 13972 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:38:36,590 - deprecation_wrapper.py:119 * 13972 From tf_simnet.py:126: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:38:36,605 - deprecation_wrapper.py:119 * 13972 From tf_simnet.py:127: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING: 2019-11-20 10:38:36,739 - deprecation.py:323 * 13972 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:39:44,252 - deprecation_wrapper.py:119 * 12444 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:39:44,260 - deprecation_wrapper.py:119 * 12444 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:39:44,267 - deprecation_wrapper.py:119 * 12444 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:39:44,285 - deprecation_wrapper.py:119 * 12444 From tf_simnet.py:116: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING: 2019-11-20 10:39:44,292 - deprecation_wrapper.py:119 * 12444 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:39:44,303 - deprecation_wrapper.py:119 * 12444 From tf_simnet.py:126: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:39:44,314 - deprecation_wrapper.py:119 * 12444 From tf_simnet.py:127: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING: 2019-11-20 10:39:44,349 - deprecation.py:323 * 12444 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 10:41:10,893 - deprecation_wrapper.py:119 * 14824 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 10:41:10,900 - deprecation_wrapper.py:119 * 14824 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 10:41:10,907 - deprecation_wrapper.py:119 * 14824 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 10:41:10,924 - deprecation_wrapper.py:119 * 14824 From tf_simnet.py:116: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING: 2019-11-20 10:41:10,930 - deprecation_wrapper.py:119 * 14824 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 10:41:10,942 - deprecation_wrapper.py:119 * 14824 From tf_simnet.py:126: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 10:41:10,952 - deprecation_wrapper.py:119 * 14824 From tf_simnet.py:127: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING: 2019-11-20 10:41:10,985 - deprecation.py:323 * 14824 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+WARNING: 2019-11-20 11:19:17,173 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 11:19:17,182 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 11:19:17,189 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 11:19:17,207 - deprecation.py:323 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 11:19:17,212 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 11:19:17,213 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 11:19:17,216 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 11:19:17,217 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 11:19:17,220 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 11:19:17,221 - deprecation.py:323 * 5352 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 11:19:17,225 - deprecation.py:323 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 11:19:17,226 - deprecation.py:323 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:42: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+WARNING: 2019-11-20 11:19:17,234 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 11:19:17,235 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 11:19:17,245 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 11:19:17,296 - deprecation.py:323 * 5352 From ./losses\simnet_loss.py:78: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+WARNING: 2019-11-20 11:19:17,470 - deprecation_wrapper.py:119 * 5352 From tf_simnet.py:81: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING: 2019-11-20 11:19:17,755 - deprecation_wrapper.py:119 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:83: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 11:19:17,856 - deprecation.py:323 * 5352 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:91: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO: 2019-11-20 11:19:20,051 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch1 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:20,523 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch2 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:20,953 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch3 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:21,364 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch4 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:21,776 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch5 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:22,228 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch6 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:22,629 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch7 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:23,066 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch8 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:23,487 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch9 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:23,930 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.epoch10 is not in all_model_checkpoint_paths. Manually adding it.
+INFO: 2019-11-20 11:19:24,486 - checkpoint_management.py:95 * 5352 model/pointwise/cnn.final is not in all_model_checkpoint_paths. Manually adding it.
+WARNING: 2019-11-20 11:24:29,990 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:415: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING: 2019-11-20 11:24:29,999 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:555: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING: 2019-11-20 11:24:30,007 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:276: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING: 2019-11-20 11:24:30,027 - deprecation.py:323 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:111: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 11:24:30,031 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:278: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING: 2019-11-20 11:24:30,033 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:190: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING: 2019-11-20 11:24:30,035 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:113: RefVariable.count_up_to (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 11:24:30,036 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\ops\variables.py:2322: count_up_to (from tensorflow.python.ops.state_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Prefer Dataset.range instead.
+WARNING: 2019-11-20 11:24:30,039 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 11:24:30,041 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\input.py:199: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING: 2019-11-20 11:24:30,045 - deprecation.py:323 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:112: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+WARNING: 2019-11-20 11:24:30,046 - deprecation.py:323 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:36: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+WARNING: 2019-11-20 11:24:30,053 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:115: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING: 2019-11-20 11:24:30,053 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\datafeeds.py:122: The name tf.parse_example is deprecated. Please use tf.io.parse_example instead.
+
+WARNING: 2019-11-20 11:24:30,063 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\layers\tf_layers.py:570: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING: 2019-11-20 11:24:30,074 - deprecation_wrapper.py:119 * 14692 From C:\AnyQ\tools\simnet\train\tf\utils\controler.py:28: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING: 2019-11-20 11:24:30,133 - deprecation.py:323 * 14692 From C:\Users\barry.ke\AppData\Local\Continuum\anaconda3\envs\tensorflowTest\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
