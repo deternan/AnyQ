@@ -52,8 +52,7 @@ def parse_text_match_pointwise_pad_data(line, func_args):
     # left_ids \t right_ids \t label
     group = line.strip().split("\t")
     if len(group) != 3:
-        logging.warning(
-            "the line not conform to format(left_ids, right_ids, label)")
+        logging.warning("the line not conform to format(left_ids, right_ids, label)")
         return
     label = [0, 0]
     all_ids = []
@@ -80,8 +79,7 @@ def parse_text_match_pairwise_pad_data(line, func_args):
     # query_terms\t postitle_terms\t negtitle_terms
     group = line.strip().split("\t")
     if len(group) != 3:
-        logging.warning(
-            "the line not conform to format(query_terms, postitle_terms, negtitle_terms)")
+        logging.warning("the line not conform to format(query_terms, postitle_terms, negtitle_terms)")
         return
     all_ids = []
     for i in [0, 1, 2]:
@@ -101,13 +99,13 @@ def usage():
     """
     usage
     """
-    print sys.argv[0], "options"
-    print "options"
-    print "\ttype: data type include pointwise or pairwise"
-    print "\tinputfile: input file path"
-    print "\trecordfile: output recorf file"
-    print "\tpad_id: pad id"
-    print "\tmax_len: sequence max length"
+    print(sys.argv[0], "options")
+    print("options")
+    print("\ttype: data type include pointwise or pairwise")
+    print("\tinputfile: input file path")
+    print("\trecordfile: output recorf file")
+    print("\tpad_id: pad id")
+    print("\tmax_len: sequence max length")
 
 
 if __name__ == "__main__":

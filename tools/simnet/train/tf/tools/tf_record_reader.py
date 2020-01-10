@@ -63,7 +63,7 @@ def read_tfrecords_pointwise(config):
         step += 1
         try:
             left_, right_, label_ = sess.run([input_l, input_r, label_y])
-            print "pointwise data read is good"
+            print("pointwise data read is good")
         except tf.errors.OutOfRangeError:
             print("read %d steps" % step)
             coord.request_stop()
@@ -91,7 +91,7 @@ def read_tfrecords_pairwise(config):
         step += 1
         try:
             query_, pos_, neg_ = sess.run([query, pos, neg])
-            print "pairwise data read is good"
+            print("pairwise data read is good")
         except tf.errors.OutOfRangeError:
             print("read %d steps" % step)
             coord.request_stop()
@@ -106,8 +106,8 @@ def usage():
     usage
     """
     print sys.argv[0], "options"
-    print "options"
-    print "\tconfig_path: configure file path"
+    print("options")
+    print("\tconfig_path: configure file path")
 
 
 if __name__ == "__main__":

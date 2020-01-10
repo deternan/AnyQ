@@ -77,6 +77,6 @@ if __name__ == '__main__':
         if pred == label:
             right += 1
         all += 1
-    print "AUC\t" + str(auc(actual, poster))
-    print "acc\t%.4f" % (1.0 * right / all)
+    print("AUC\t" + str(auc(actual, poster))
+    print("acc\t%.4f" % (1.0 * right / all))
     

@@ -16,6 +16,7 @@
 
 import sys
 import time
+import datetime
 
 import tensorflow as tf
 
@@ -92,6 +93,7 @@ def run_trainer(loss, optimizer, config):
         step = 0
         epoch_num = 1
         start_time = time.time()
+        last_timestamp = datetime.datetime.now()
         while not coord.should_stop():
             try:
                 step += 1
@@ -99,15 +101,15 @@ def run_trainer(loss, optimizer, config):
                 avg_cost += c
 
                 if step % print_iter == 0:
+                    now_timestamp = datetime.datetime.now()
                     print("loss: %f" % ((avg_cost / print_iter)))
                     avg_cost = 0.0
-                if step % epoch_iter == 0:
-                    end_time = time.time()
-                    print("save model epoch%d, used time: %d" % (epoch_num, 
-                          end_time - start_time))
-                    save_path = saver.save(sess, 
-                            "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
-                    epoch_num += 1
+                    last_timestamp = now_timestamp
+                #if step % epoch_iter == 0:
+                #    end_time = time.time()
+                #    print("save model epoch%d, used time: %d" % (epoch_num, end_time - start_time))
+                #    save_path = saver.save(sess, "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
+                #    epoch_num += 1
                     start_time = time.time()
                     
             except tf.errors.OutOfRangeError:
