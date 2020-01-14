@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
-
 import os
-os.chdir("D:\\Phelps\\GitHub\\AnyQ\\tools\\simnet\\preprocess") 	# quora.py的路径
+
+os.chdir('/tmp/AnyQ-master/tools/simnet/preprocess/') 	
 
 import pandas as pd
 import numpy as np
@@ -15,14 +14,11 @@ import itertools
 from collections import defaultdict
 from gensim import corpora
 
-inputFolder = 'D:\\Phelps\\GitHub\\AnyQ\\tools\\simnet\\preprocess\\data\\'
+inputFolder = '/tmp/AnyQ-master/tools/simnet/train/tf/data/'
 outputFolder = inputFolder
 
-train = pd.read_csv(inputFolder + "train.csv")  # 共404290个问句对
+train = pd.read_csv(inputFolder + "train.csv") 
 #test = pd.read_csv("data/test.csv")
-
-# Check for any null values
-#print(train.isnull().sum())
 
 # Add the string 'empty' to empty strings
 train = train.fillna('empty')
@@ -158,13 +154,9 @@ precessed_corpus = [[token for token in text if frequency[token] > 1] for text i
 
 # dictionary
 dictionary = corpora.Dictionary(precessed_corpus)
-#print(dictionary)
-#print(dictionary.token2id)
 
 new_doc = "would happen Indian government stole Kohinoor Koh i Noor diamond back"
 new_vec = dictionary.doc2bow(new_doc.lower().split())
-#dictionary.doc2idx(new_doc.lower().split())
-#print(new_vec)  
 
 
 bow_corpus = [dictionary.doc2idx(text) for text in precessed_corpus]
@@ -173,19 +165,15 @@ bow_corpus_plus_1 = [[i+1 for i in bow_corpu] for bow_corpu in bow_corpus]
 bow_corpus_str = [[str(i) for i in bow_corpu_plus] for bow_corpu_plus in bow_corpus_plus_1]
 bow_corpus_join = [' '.join(bow_corpus_) for bow_corpus_ in bow_corpus_str]
 
-# 生成文件
 pointwise_train = pd.DataFrame(bow_corpus_join[:404290], columns = ['question1'])
 pointwise_train['question2'] = bow_corpus_join[404290:]
 pointwise_train['is_duplicate'] = train['is_duplicate']
 
-# 防止空(null)问题
 pointwise_train = pointwise_train[[len(i)>0 for i in pointwise_train['question1']]]
 pointwise_train = pointwise_train[[len(i)>0 for i in pointwise_train['question2']]]
 
-# 拆分训练集和测试集
-size = round(len(pointwise_train)*0.8) # 比例为8:2
+size = round(len(pointwise_train)*0.8)
 
-# tsv格式的数据文件
 pointwise_train[:size].to_csv(outputFolder + 'train_.tsv',sep = '\t', index=False, header=False)
 pointwise_train[size:].to_csv(outputFolder + 'test_.tsv',sep = '\t', index=False, header=False)
 
