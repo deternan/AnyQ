@@ -100,17 +100,19 @@ def run_trainer(loss, optimizer, config):
                 c, _= sess.run([loss, optimizer])
                 avg_cost += c
 
-                if step % print_iter == 0:
-                    now_timestamp = datetime.datetime.now()
-                    print("loss: %f" % ((avg_cost / print_iter)))
-                    avg_cost = 0.0
-                    last_timestamp = now_timestamp
-                #if step % epoch_iter == 0:
-                #    end_time = time.time()
-                #    print("save model epoch%d, used time: %d" % (epoch_num, end_time - start_time))
-                #    save_path = saver.save(sess, "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
-                #    epoch_num += 1
-                    start_time = time.time()
+                #if step % print_iter == 0:
+                #    now_timestamp = datetime.datetime.now()
+                #    print("loss: %f" % ((avg_cost / print_iter)))
+                #    avg_cost = 0.0
+                #    last_timestamp = now_timestamp
+                if step % epoch_iter == 0:                    
+					now_timestamp = datetime.datetime.now()                    
+					print("step: %d, loss: %4.4f (%4.2f sec/print_iter)" % (step,(avg_cost / print_iter),(now_timestamp-last_timestamp).seconds))
+                    save_path = saver.save(sess, "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
+					avg_cost = 0.0
+                    epoch_num += 1
+					last_timestamp = now_timestamp
+                    #start_time = time.time()
                     
             except tf.errors.OutOfRangeError:
                 save_path = saver.save(sess, "%s/%s.final" % (model_path, model_file))

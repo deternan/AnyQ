@@ -90,7 +90,7 @@ def predict(conf_dict):
     """
     net = utility.import_object(
         conf_dict["net_py"], conf_dict["net_class"])(conf_dict)
-    conf_dict.update({"num_epochs": "1", "batch_size": "400",
+    conf_dict.update({"num_epochs": "10", "batch_size": "800",
                       "shuffle": "0", "train_file": conf_dict["test_file"]})
     test_datafeed = datafeeds.TFPointwisePaddingData(conf_dict)
     test_l, test_r, test_y = test_datafeed.ops()
