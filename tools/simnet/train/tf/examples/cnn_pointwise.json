@@ -1,6 +1,6 @@
 {
     "train_data":{
-        "train_file": "../data/convert_train_pointwise_data",
+        "train_file": "data/convert_train_",
         "data_size": 323273,
         "left_slots" : [["left",32]],
         "right_slots" : [["right",32]]
@@ -27,7 +27,7 @@
 
     "setting":{
         "batch_size": 800,
-        "num_epochs": 10,
+        "num_epochs": 1,
         "thread_num": 6,
         "print_iter": 10,
         "model_path": "model/pointwise",
