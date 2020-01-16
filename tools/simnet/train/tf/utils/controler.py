@@ -16,7 +16,6 @@
 
 import sys
 import time
-import datetime
 
 import tensorflow as tf
 
@@ -40,9 +39,7 @@ def run_predict(pred, label, config):
         pred_index = tf.argmax(pred, 1)
         acc = tf.constant([0.0])
     modelfile = config["test_model_file"]
-    result_file = open(config["test_result"], 'w')
-	#result_file = file(config["test_result"], "w")
-	#result_file = open(config["test_result"], mode = "w")	
+    result_file = file(config["test_result"], "w")
     step = 0
     init = tf.group(tf.global_variables_initializer(),
                     tf.local_variables_initializer())
@@ -66,7 +63,7 @@ def run_predict(pred, label, config):
     result_file.close()
     if mode == "pointwise":
         mean_acc = mean_acc / step
-        print(mean_acc)
+        print >> sys.stderr, "accuracy: %4.2f" % (mean_acc * 100)
 
 
 def run_trainer(loss, optimizer, config):
@@ -93,26 +90,23 @@ def run_trainer(loss, optimizer, config):
         step = 0
         epoch_num = 1
         start_time = time.time()
-        last_timestamp = datetime.datetime.now()
         while not coord.should_stop():
             try:
                 step += 1
                 c, _= sess.run([loss, optimizer])
                 avg_cost += c
 
-                #if step % print_iter == 0:
-                #    now_timestamp = datetime.datetime.now()
-                #    print("loss: %f" % ((avg_cost / print_iter)))
-                #    avg_cost = 0.0
-                #    last_timestamp = now_timestamp
-                if step % epoch_iter == 0:                    
-					now_timestamp = datetime.datetime.now()                    
-					print("step: %d, loss: %4.4f (%4.2f sec/print_iter)" % (step,(avg_cost / print_iter),(now_timestamp-last_timestamp).seconds))
-                    save_path = saver.save(sess, "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
-					avg_cost = 0.0
+                if step % print_iter == 0:
+                    print("loss: %f" % ((avg_cost / print_iter)))
+                    avg_cost = 0.0
+                if step % epoch_iter == 0:
+                    end_time = time.time()
+                    print("save model epoch%d, used time: %d" % (epoch_num, 
+                          end_time - start_time))
+                    save_path = saver.save(sess, 
+                            "%s/%s.epoch%d" % (model_path, model_file, epoch_num))
                     epoch_num += 1
-					last_timestamp = now_timestamp
-                    #start_time = time.time()
+                    start_time = time.time()
                     
             except tf.errors.OutOfRangeError:
                 save_path = saver.save(sess, "%s/%s.final" % (model_path, model_file))
